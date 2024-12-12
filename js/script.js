@@ -2,7 +2,7 @@ function filterByCategory(category) {
     if (!category) {
         productsDiv.innerHTML = productsCards.map(pc => pc.render()).join("");
     } else {
-        productsDiv.innerHTML = productsCards.filter(pc => pc.product.category === category).map(pc => pc.render()).join("");
+        productsDiv.innerHTML = productsCards.filter(pc => pc.category === category).map(pc => pc.render()).join("");
     }
     addEventListenerProductsInfoButtons();
 }
