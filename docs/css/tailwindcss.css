@@ -709,6 +709,11 @@ video {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#913c3c\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 60 60 / var(--tw-bg-opacity, 1));
+}
+
 .fill-white {
   fill: #fff;
 }
@@ -760,6 +765,11 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:bg-gray-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 768px) {

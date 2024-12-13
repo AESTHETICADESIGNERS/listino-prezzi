@@ -51,7 +51,7 @@ const addEventListenerProductsInfoButtons = () => {
 */
 
 const productsList = [
-    { "id": "IEHKOOBLXC", "name": "Logo personalizzato", "description": "", "price": "Da 2 a 10", "category": "grafiche" },
+    { "id": "IEHKOOBLXC", "name": "Logo personalizzato", "description": "", "price": "Da 2 a 10", "category": "logo" },
     { "id": "YKSOWLXJKA", "name": "Banner Personalizzato", "description": "", "price": "0", "category": "grafiche" },
     { "id": "ODNODKADMD", "name": "Server Discord", "description": "", "price": "0", "category": "grafiche" },
     { "id": "PVBEIGBFUW", "name": "Twitch Banner", "description": "", "price": "0", "category": "grafiche" },
@@ -87,4 +87,30 @@ addEventListenerProductsInfoButtons();
 
 /*
     PRODUCTS MODAL
+*/
+
+/*
+    PRODUCTS CATEGORIES
+*/
+
+const categoriesDiv = document.getElementById("categories");
+const categoriesButtons = Array.from(categoriesDiv.getElementsByTagName("button"));
+
+// Aggiungo event listener per ogni bottone in modo da aggiungere il colore alla categoria selezionata
+
+categoriesButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        // Elimino la classe "bg-[#913c3c]" a tutti i pulsanti e aggiungo l'hover
+        categoriesButtons.forEach(btn => {
+            btn.classList.remove("bg-[#913c3c]");
+            btn.classList.add("hover:bg-gray-700");
+        });
+        // Aggiungo la classe al pulsante che è stato cliccato e rimuovo l'hover
+        e.target.classList.add("bg-[#913c3c]");
+        e.target.classList.remove("hover:bg-gray-700");
+    });
+});
+
+/*
+    PRODUCTS CATEGORIES
 */
