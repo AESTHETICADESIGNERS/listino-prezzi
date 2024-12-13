@@ -102,8 +102,11 @@ categoriesButtons.forEach(button => {
     button.addEventListener("click", (e) => {
         // Elimino la classe "bg-[#913c3c]" a tutti i pulsanti e aggiungo l'hover
         categoriesButtons.forEach(btn => {
+            // Rimuovo lo sfondo attivo
             btn.classList.remove("bg-[#913c3c]");
+            // Aggiungo quello di default
             btn.classList.add("hover:bg-gray-700");
+            btn.classList.add("bg-gray-600");
         });
         // Aggiungo la classe al pulsante che è stato cliccato e rimuovo l'hover
         e.target.classList.add("bg-[#913c3c]");
