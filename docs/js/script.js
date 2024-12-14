@@ -88,3 +88,32 @@ addEventListenerProductsInfoButtons();
 /*
     PRODUCTS MODAL
 */
+
+/*
+    PRODUCTS CATEGORIES
+*/
+
+const categoriesButtons = Array.from(document.getElementById("categories").getElementsByTagName("button"));
+
+categoriesButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        // Per tutti i bottoni imposto il colore di sfondo di default e l'hover
+        categoriesButtons.forEach(btn => {
+            // Tolgo le classi del bottone attivo
+            btn.classList.remove("bg-[#913c3c]");
+            // Aggiungo le classi del bottone di default
+            btn.classList.add("bg-gray-600");
+            btn.classList.add("hover:bg-gray-700");
+        });
+        // Aggiungo il colore attivo al bottone appena cliccato
+        e.target.classList.add("bg-[#913c3c]");
+        // Rimuovo il colore non attivo
+        e.target.classList.remove("bg-gray-600");
+        // Rimuovo l'hover
+        e.target.classList.remove("hover:bg-gray-700");
+    });
+});
+
+/*
+    PRODUCTS CATEGORIES
+*/
