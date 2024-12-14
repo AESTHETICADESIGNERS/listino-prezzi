@@ -51,15 +51,15 @@ const addEventListenerProductsInfoButtons = () => {
 */
 
 const productsList = [
-    { "id": "IEHKOOBLXC", "name": "Logo personalizzato", "description": "", "price": "Da 2 a 10", "category": "logo" },
-    { "id": "YKSOWLXJKA", "name": "Banner Personalizzato", "description": "", "price": "0", "category": "banner" },
-    { "id": "ODNODKADMD", "name": "Server Discord", "description": "", "price": "0", "category": "grafiche" },
-    { "id": "PVBEIGBFUW", "name": "Twitch Banner", "description": "", "price": "0", "category": "twitch" },
+    { "id": "IEHKOOBLXC", "name": "Logo piccolo", "description": "", "price": "Da 2 a 10", "category": "logo" },
+    { "id": "YKSOWLXJKA", "name": "Banner piccolo", "description": "", "price": "0", "category": "banner" },
+    { "id": "ODNODKADMD", "name": "Server", "description": "", "price": "0", "category": "discord" },
+    { "id": "PVBEIGBFUW", "name": "Background", "description": "", "price": "0", "category": "twitch" },
     { "id": "WUKNMTDIVH", "name": "Emoji", "description": "", "price": "0", "category": "emoji" },
-    { "id": "OHRFLLGXKN", "name": "Facecam Banner", "description": "", "price": "0", "category": "banner" },
-    { "id": "WMBLWCSXGN", "name": "Info panel Twitch", "description": "", "price": "0", "category": "twitch" },
-    { "id": "AJRHETLJGX", "name": "Youtube icon", "description": "", "price": "0", "category": "youtube" },
-    { "id": "YLUXNGYNOP", "name": "Youtube Banner", "description": "", "price": "0", "category": "youtube" }
+    { "id": "OHRFLLGXKN", "name": "Facecam", "description": "", "price": "0", "category": "twitch" },
+    { "id": "WMBLWCSXGN", "name": "Info panel", "description": "", "price": "0", "category": "twitch" },
+    { "id": "AJRHETLJGX", "name": "icon", "description": "", "price": "0", "category": "youtube" },
+    { "id": "YLUXNGYNOP", "name": "Banner", "description": "", "price": "0", "category": "youtube" }
 ];
 
 const productsCards = productsList.map((product) => new ProductCard(product));
