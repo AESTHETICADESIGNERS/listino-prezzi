@@ -51,15 +51,20 @@ const addEventListenerProductsInfoButtons = () => {
 */
 
 const productsList = [
+<<<<<<< HEAD
     { "id": "IEHKOOBLXC", "name": "Logo personalizzato", "description": "", "price": "Da 2 a 10", "category": "grafiche" },
     { "id": "YKSOWLXJKA", "name": "Banner Personalizzato", "description": "", "price": "0", "category": "grafiche" },
+=======
+    { "id": "IEHKOOBLXC", "name": "Logo personalizzato", "description": "", "price": "Da 2 a 10", "category": "logo" },
+    { "id": "YKSOWLXJKA", "name": "Banner Personalizzato", "description": "", "price": "0", "category": "banner" },
+>>>>>>> 0cd9e2ae6f465eab0d54363c8639675ad1403f83
     { "id": "ODNODKADMD", "name": "Server Discord", "description": "", "price": "0", "category": "grafiche" },
-    { "id": "PVBEIGBFUW", "name": "Twitch Banner", "description": "", "price": "0", "category": "grafiche" },
-    { "id": "WUKNMTDIVH", "name": "Emoji", "description": "", "price": "0", "category": "grafiche" },
-    { "id": "OHRFLLGXKN", "name": "Facecam Banner", "description": "", "price": "0", "category": "grafiche" },
-    { "id": "WMBLWCSXGN", "name": "Info panel Twitch", "description": "", "price": "0", "category": "grafiche" },
-    { "id": "AJRHETLJGX", "name": "Youtube icon", "description": "", "price": "0", "category": "grafiche" },
-    { "id": "YLUXNGYNOP", "name": "Youtube Banner", "description": "", "price": "0", "category": "grafiche" }
+    { "id": "PVBEIGBFUW", "name": "Twitch Banner", "description": "", "price": "0", "category": "twitch" },
+    { "id": "WUKNMTDIVH", "name": "Emoji", "description": "", "price": "0", "category": "emoji" },
+    { "id": "OHRFLLGXKN", "name": "Facecam Banner", "description": "", "price": "0", "category": "banner" },
+    { "id": "WMBLWCSXGN", "name": "Info panel Twitch", "description": "", "price": "0", "category": "twitch" },
+    { "id": "AJRHETLJGX", "name": "Youtube icon", "description": "", "price": "0", "category": "youtube" },
+    { "id": "YLUXNGYNOP", "name": "Youtube Banner", "description": "", "price": "0", "category": "youtube" }
 ];
 
 const productsCards = productsList.map((product) => new ProductCard(product));
