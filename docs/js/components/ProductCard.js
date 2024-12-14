@@ -5,7 +5,7 @@ class ProductCard {
             <b>{name}</b>
             <p class="text-gray-300">{description}</p>
             <p class="text-gray-300 text-lg">{price}€</p>
-            <button productid={productId} class="productInfo bg-gray-600 p-2 rounded-lg text-white font-medium">Informazioni</button>
+            <button productid={productId} class="productInfo bg-gray-600 p-2 rounded-lg text-white font-medium">Informativa</button>
         </div>`;
         this.id = id;
         this.name = name;

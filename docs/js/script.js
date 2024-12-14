@@ -56,7 +56,7 @@ const productsList = [
     { "id": "ODNODKADMD", "name": "Server", "description": "", "price": "0", "category": "discord" },
     { "id": "PVBEIGBFUW", "name": "Background", "description": "", "price": "0", "category": "twitch" },
     { "id": "WUKNMTDIVH", "name": "Emoji", "description": "", "price": "0", "category": "emoji" },
-    { "id": "OHRFLLGXKN", "name": "Facecam", "description": "", "price": "0", "category": "twitch" },
+    { "id": "OHRFLLGXKN", "name": "Facecam", "description": "", "price": "0", "category": "offerte" },
     { "id": "WMBLWCSXGN", "name": "Info panel", "description": "", "price": "0", "category": "twitch" },
     { "id": "AJRHETLJGX", "name": "icon", "description": "", "price": "0", "category": "youtube" },
     { "id": "YLUXNGYNOP", "name": "Banner", "description": "", "price": "0", "category": "youtube" }
@@ -99,6 +99,7 @@ categoriesButtons.forEach(button => {
     button.addEventListener("click", (e) => {
         // Per tutti i bottoni imposto il colore di sfondo di default e l'hover
         categoriesButtons.forEach(btn => {
+            if (btn.getAttribute("alwaysActive")==="true") return;
             // Tolgo le classi del bottone attivo
             btn.classList.remove("bg-[#913c3c]");
             // Aggiungo le classi del bottone di default
