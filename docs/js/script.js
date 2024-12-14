@@ -1,5 +1,8 @@
-function filterByCategory(category) {
-    if (!category) {
+function caricaProdotti(category, offerte) {
+    console.log(offerte);
+    if (offerte) {
+        productsDiv.innerHTML = productsCards.filter(pc => pc?.discountPrice).map(pc => pc.render()).join("");
+    } else if (!category) {
         productsDiv.innerHTML = productsCards.map(pc => pc.render()).join("");
     } else {
         productsDiv.innerHTML = productsCards.filter(pc => pc.category === category).map(pc => pc.render()).join("");
@@ -33,7 +36,7 @@ const addEventListenerProductsInfoButtons = () => {
             const productId = e.target.getAttribute("productid");
             const product = productsList.find(product => product.id == productId);
 
-            const productModal = new ProductModal(product);
+            const productModal = product?.discountPrice ? new DealProductModal(product) : new ProductModal(product);
 
             productModalDiv.innerHTML = productModal.render();
 
@@ -51,19 +54,18 @@ const addEventListenerProductsInfoButtons = () => {
 */
 
 const productsList = [
-    { "id": "IEHKOOBLXC", "name": "Logo piccolo", "description": "", "price": "Da 2 a 10", "category": "logo" },
-    { "id": "YKSOWLXJKA", "name": "Banner piccolo", "description": "", "price": "0", "category": "banner" },
-    { "id": "ODNODKADMD", "name": "Server", "description": "", "price": "0", "category": "discord" },
-    { "id": "PVBEIGBFUW", "name": "Background", "description": "", "price": "0", "category": "twitch" },
-    { "id": "WUKNMTDIVH", "name": "Emoji", "description": "", "price": "0", "category": "emoji" },
-    { "id": "OHRFLLGXKN", "name": "Facecam", "description": "", "price": "0", "category": "offerte" },
-    { "id": "WMBLWCSXGN", "name": "Info panel", "description": "", "price": "0", "category": "twitch" },
-    { "id": "AJRHETLJGX", "name": "icon", "description": "", "price": "0", "category": "youtube" },
-    { "id": "YLUXNGYNOP", "name": "Banner", "description": "", "price": "0", "category": "youtube" }
+    { "id": "IEHKOOBLXC", "name": "Logo piccolo", "description": "", "price": "Da 2 a 10", "discountPrice": "3", "category": "logo" },
+    { "id": "YKSOWLXJKA", "name": "Banner piccolo", "description": "", "price": "0", "discountPrice": "", "category": "banner" },
+    { "id": "ODNODKADMD", "name": "Server", "description": "", "price": "0", "discountPrice": "", "category": "discord" },
+    { "id": "PVBEIGBFUW", "name": "Background", "description": "", "price": "0", "discountPrice": "", "category": "twitch" },
+    { "id": "WUKNMTDIVH", "name": "Emoji", "description": "", "price": "0", "discountPrice": "", "category": "emoji" },
+    { "id": "OHRFLLGXKN", "name": "Facecam", "description": "", "price": "12", "discountPrice": "", "category": "banner" },
+    { "id": "WMBLWCSXGN", "name": "Info panel", "description": "", "price": "0", "discountPrice": "", "category": "twitch" },
+    { "id": "AJRHETLJGX", "name": "icon", "description": "", "price": "0", "discountPrice": "", "category": "youtube" },
+    { "id": "YLUXNGYNOP", "name": "Banner", "description": "", "price": "0", "discountPrice": "", "category": "youtube" }
 ];
 
-const productsCards = productsList.map((product) => new ProductCard(product));
-
+const productsCards = productsList.map((product) => product?.discountPrice ? new DealProductCard(product) : new ProductCard(product));
 const productsDiv = document.getElementById("products");
 
 const searchProducts = document.getElementById("searchproducts");
