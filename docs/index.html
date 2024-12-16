@@ -12,22 +12,27 @@
     <div id="productModalDiv">
     </div>
     <div class="container mx-auto px-2 flex flex-col items-center gap-4">
-        <img src="logo.png" alt="" width="200px" height="200px">
+        <img src="logo.png" alt="" width="100px" height="100px">
         <h1 class="text-2xl font-semibold text-white">Listino prezzi</h1>
-        <div id="categories">
-            <button class="bg-[#913c3c] primary p-2 rounded-lg text-white font-semibold mx-1" onclick="filterByCategory()">Tutto</button>
-            <button class="bg-gray-600 primary p-2 rounded-lg text-white font-semibold mx-1 hover:bg-gray-700" onclick="filterByCategory('logo')">Logo</button>
-            <button class="bg-gray-600 primary p-2 rounded-lg text-white font-semibold mx-1 hover:bg-gray-700" onclick="filterByCategory('banner')">Banner</button>
-            <button class="bg-gray-600 primary p-2 rounded-lg text-white font-semibold mx-1 hover:bg-gray-700" onclick="filterByCategory('twitch')">Twitch</button>
-            <button class="bg-gray-600 primary p-2 rounded-lg text-white font-semibold mx-1 hover:bg-gray-700" onclick="filterByCategory('youtube')">YouTube</button>
-            <button class="bg-gray-600 primary p-2 rounded-lg text-white font-semibold mx-1 hover:bg-gray-700" onclick="filterByCategory('emoji')">Emoji</button>
+        <div class="flex flex-wrap justify-center gap-2" id="categories">
+            <button class="flex gap-1 bg-[#913c3c] primary p-2 rounded-lg text-white font-semibold" onclick="caricaProdotti()"><img src="./icone/icona-tutto.svg"><p>Tutto</p></button>
+            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('logo')"><img src="./icone/icona-logo.svg"><p>Logo</p></button>
+            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('banner')"><img src="./icone/icona-banner.svg"><p>Banner</p></button>
+            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('twitch')"><img src="./icone/icona-twitch.svg"><p>Twitch</p></button>
+            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('youtube')"><img src="./icone/icona-youtube.svg"><p>YouTube</p></button>
+            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('emoji')"><img src="./icone/icona-emoji.svg"><p>Emoji</p></button>
+            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('discord')"><img src="./icone/icona-discord.svg"><p>Discord</p></button>
+            <button alwaysActive="true" class="flex gap-1 bg-red-800 primary p-2 rounded-lg text-white font-semibold" onclick="caricaProdotti('', true)"><p>Offerte</p></button>
+            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('consigliati')"><p>Consigliati</p></button>
         </div>
         <input placeholder="Cerca un prodotto" class="bg-gray-800 text-white font-medium p-2 rounded-md" type="text" name="searchproducts" id="searchproducts">
         <div id="products" class="grid lg:grid-cols-4 md:grid-cols-2 grid-flow-rows gap-6 text-white">
         </div>
     </div>
     <script src="./js/components/ProductCard.js"></script>
+    <script src="./js/components/DealProductCard.js"></script>
     <script src="./js/components/ProductModal.js"></script>
+    <script src="./js/components/DealProductModal.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
