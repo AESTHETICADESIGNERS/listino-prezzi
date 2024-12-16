@@ -1,11 +1,11 @@
 class ProductCard {
     constructor({id, name, description, price, category}) {
         this.template =
-        `<div class="product flex flex-col p-4 justify-between bg-slate-900 rounded-md border-2 border-gray-500">
+        `<div class="product flex flex-col p-4 gap-2 justify-between bg-slate-900 rounded-md border-2 border-gray-500">
             <b>{name}</b>
             <p class="text-gray-300">{description}</p>
             <p class="text-gray-300 text-lg">{price}€</p>
-            <button productid={productId} class="productInfo bg-gray-600 p-2 rounded-lg text-white font-medium">Informativa</button>
+            <button productid={productId} class="productInfo bg-gray-600 p-2 rounded-lg text-white font-medium">Dettagli</button>
         </div>`;
         this.id = id;
         this.name = name;

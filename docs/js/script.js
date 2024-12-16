@@ -109,11 +109,11 @@ categoriesButtons.forEach(button => {
             btn.classList.add("hover:bg-gray-700");
         });
         // Aggiungo il colore attivo al bottone appena cliccato
-        e.target.classList.add("bg-[#913c3c]");
+        button.classList.add("bg-[#913c3c]");
         // Rimuovo il colore non attivo
-        e.target.classList.remove("bg-gray-600");
+        button.classList.remove("bg-gray-600");
         // Rimuovo l'hover
-        e.target.classList.remove("hover:bg-gray-700");
+        button.classList.remove("hover:bg-gray-700");
     });
 });
 
