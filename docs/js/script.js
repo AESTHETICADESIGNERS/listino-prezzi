@@ -63,7 +63,7 @@ const productsList = [
     { "id": "WMBLWCSXGN", "name": "Info panel", "description": "", "price": "0", "discountPrice": "", "category": "twitch" },
     { "id": "AJRHETLJGX", "name": "icon", "description": "", "price": "0", "discountPrice": "", "category": "youtube" },
     { "id": "YLUXNGYNOP", "name": "Banner", "description": "", "price": "0", "discountPrice": "", "category": "youtube" },
-    { "id": "FJGHFUGHUFIG", "name": "TEST", "description": "", "price": "0", "discountPrice": "", "category": "youtube" }
+    { "id": "FJGHFUGHUFIG", "name": "TEST2", "description": "", "price": "0", "discountPrice": "", "category": "youtube" }
 ];
 
 const productsCards = productsList.map((product) => product?.discountPrice ? new DealProductCard(product) : new ProductCard(product));
