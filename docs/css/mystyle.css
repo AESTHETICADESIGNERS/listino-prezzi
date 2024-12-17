@@ -9,11 +9,18 @@ body {
 
 .product {
     transition-duration: 1s;
-    transition-timing-function: cubic-bezier();
 }
 
 .product:hover {
     transform: scale(1.05);
     box-shadow: white 2px 3px;
     border-color: white;
+}
+
+.logo {
+    transition-duration: 3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
