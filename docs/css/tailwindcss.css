@@ -618,6 +618,10 @@ video {
   margin-left: auto;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
