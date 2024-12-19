@@ -13,26 +13,40 @@
     </div>
     <div class="container mx-auto px-2 flex flex-col items-center gap-4">
         <img class="logo mt-5" src="logo.png" alt="" width="100px" height="100px">
-        <h1 class="text-2xl font-semibold text-white">Listino prezzi</h1>
-        <div class="flex flex-wrap justify-center gap-2 p-5 rounded-md bg-slate-900 border-gray-400 border-2" id="categories">
-            <button class="flex gap-1 bg-[#913c3c] primary p-2 rounded-lg text-white font-semibold" onclick="caricaProdotti()"><img src="./icone/icona-tutto.svg"><p>Tutto</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('logo')"><img src="./icone/icona-logo.svg"><p>Logo</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('banner')"><img src="./icone/icona-banner.svg"><p>Banner</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('twitch')"><img src="./icone/icona-twitch.svg"><p>Twitch</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('youtube')"><img src="./icone/icona-youtube.svg"><p>YouTube</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('emoji')"><img src="./icone/icona-emoji.svg"><p>Emoji</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('discord')"><img src="./icone/icona-discord.svg"><p>Discord</p></button>
-            <button alwaysActive="true" class="flex gap-1 bg-red-800 primary p-2 rounded-lg text-white font-semibold" onclick="caricaProdotti('', true)"><p>Offerte</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('consigliati')"><p>Consigliati</p></button>
-        </div>
-        <input placeholder="Cerca un prodotto" class="bg-gray-800 text-white font-medium p-2 rounded-md w-80" type="text" name="searchproducts" id="searchproducts">
-        <div id="products" class="grid lg:grid-cols-4 md:grid-cols-2 grid-flow-rows gap-6 text-white">
+        <h1 class="text-2xl font-semibold text-white">ECRP DEV</h1>
+        <div class="grid grid-cols-6 gap-4 text-white">
+          <div class="flex flex-col p-5 col-span-6 md:col-span-4 rounded-md bg-[#4d4419] border-[#ebce2f] border-2 border-solid">
+            <h2 class="text-3xl font-bold text-[#ebce2f]">
+              Monete
+            </h2>
+            <p class="text-lg font-semibold text-[#9c9c9c]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentium consectetur quas at asperiores, unde ipsam minima delectus ea facere illo architecto officiis facilis?
+            </p>
+          </div>
+          <div class="p-5 bg-slate-500 col-span-6 md:col-span-2">
+            <h2 class="text-3xl font-semibold text-green-500">Pass Roleplay</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentium consectetur quas at asperiores, unde ipsam minima delectus ea facere illo architecto officiis facilis? Ab praesentium maiores sed.
+            </p>
+          </div>
+
+          <div class="p-5 bg-[#5c150a] col-span-6 md:col-span-3 rounded-md border-[#d93e26] border-2 border-solid">
+            <h2 class="text-3xl font-semibold text-[#d93e26]">Apri la tua mafia</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentium consectetur quas at asperiores, unde ipsam minima delectus ea facere illo architecto officiis facilis? Ab praesentium maiores sed.
+            </p>
+          </div>
+          <div class="p-5 bg-slate-500 col-span-6 md:col-span-3">
+            <h2 class="text-3xl font-semibold">Diventa imprenditore</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentium consectetur quas at asperiores, unde ipsam minima delectus ea facere illo architecto officiis facilis? Ab praesentium maiores sed.
+            </p>
+          </div>
+
+          <div class="p-5 bg-slate-500 col-span-6 md:col-span-2">06</div>
+          <div class="p-5 bg-slate-500 col-span-6 md:col-span-4">07</div>
         </div>
     </div>
-    <script src="./js/components/ProductCard.js"></script>
-    <script src="./js/components/DealProductCard.js"></script>
-    <script src="./js/components/ProductModal.js"></script>
-    <script src="./js/components/DealProductModal.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
