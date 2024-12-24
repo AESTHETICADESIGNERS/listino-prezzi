@@ -9,30 +9,54 @@
     <link rel="stylesheet" href="./css/mystyle.css">
   </head>
   <body class="bg-gray-950">
-    <div id="productModalDiv">
-    </div>
+    <image-card text="Ciao come stai!!"></image-card>
     <div class="container mx-auto px-2 flex flex-col items-center gap-4">
         <img class="logo mt-5" src="logo.png" alt="" width="100px" height="100px">
-        <h1 class="text-2xl font-semibold text-white">Listino prezzi</h1>
-        <div class="flex flex-wrap justify-center gap-2 p-5 rounded-md bg-slate-900 border-gray-400 border-2" id="categories">
-            <button class="flex gap-1 bg-[#913c3c] primary p-2 rounded-lg text-white font-semibold" onclick="caricaProdotti()"><img src="./icone/icona-tutto.svg"><p>Tutto</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('logo')"><img src="./icone/icona-logo.svg"><p>Logo</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('banner')"><img src="./icone/icona-banner.svg"><p>Banner</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('twitch')"><img src="./icone/icona-twitch.svg"><p>Twitch</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('youtube')"><img src="./icone/icona-youtube.svg"><p>YouTube</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('emoji')"><img src="./icone/icona-emoji.svg"><p>Emoji</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('discord')"><img src="./icone/icona-discord.svg"><p>Discord</p></button>
-            <button alwaysActive="true" class="flex gap-1 bg-red-800 primary p-2 rounded-lg text-white font-semibold" onclick="caricaProdotti('', true)"><p>Offerte</p></button>
-            <button class="flex gap-1 bg-gray-600 primary p-2 rounded-lg text-white font-semibold hover:bg-gray-700" onclick="caricaProdotti('consigliati')"><p>Consigliati</p></button>
-        </div>
-        <input placeholder="Cerca un prodotto" class="bg-gray-800 text-white font-medium p-2 rounded-md w-80" type="text" name="searchproducts" id="searchproducts">
-        <div id="products" class="grid lg:grid-cols-4 md:grid-cols-2 grid-flow-rows gap-6 text-white">
+        <h1 class="text-2xl font-semibold text-white">ECRP DEV</h1>
+        <div class="grid grid-cols-6 gap-4 text-white">
+
+          <div class="flex flex-row col-span-6 md:col-span-4 rounded-lg bg-[#e6e6e6] border-gray-500 border-[5px] border-solid gap-6">
+            <img class="relative top-0 h-fit w-[15rem]" src="./images/image-grafiche.png" alt="" srcset="">
+            <div class="flex flex-col justify-center m-2">
+              <h2 class="text-3xl font-bold text-black">Grafiche</h2>
+              <p class="text-lg font-semibold text-black">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentium consectetur quas at asperiores, unde ipsam minima delectus ea facere illo architecto officiis facilis?
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row col-span-6 md:col-span-2 rounded-lg bg-[#7289d9] border-[#5163a3] border-[5px] border-solid gap-6">
+            <img class="relative top-0 h-fit w-[15rem]" src="./images/image-grafiche.png" alt="" srcset="">
+            <div class="flex flex-col justify-center m-2">
+              <h2 class="text-3xl font-bold text-white">Grafiche Discord</h2>
+              <p class="text-lg font-semibold text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentiu
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row col-span-6 md:col-span-3 rounded-lg bg-[#ff0000] border-[#bd2020] border-[5px] border-solid gap-6">
+            <img class="relative top-0 h-fit w-[15rem]" src="./images/youtube-logo.webp" alt="" srcset="">
+            <div class="flex flex-col justify-center m-2">
+              <h2 class="text-3xl font-bold text-white">Grafiche YouTube</h2>
+              <p class="text-lg font-semibold text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentiu
+              </p>
+            </div>
+          </div>
+          
+          <div class="flex flex-row col-span-6 md:col-span-3 rounded-lg bg-[#7f3fe0] border-gray-500 border-[5px] border-solid gap-6">
+            <img class="relative top-0 h-fit w-[15rem]" src="./images/image-grafiche.png" alt="" srcset="">
+            <div class="flex flex-col justify-center m-2">
+              <h2 class="text-3xl font-bold text-white">Grafiche Twitch</h2>
+              <p class="text-lg font-semibold text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentiu
+              </p>
+            </div>
+          </div>
         </div>
     </div>
-    <script src="./js/components/ProductCard.js"></script>
-    <script src="./js/components/DealProductCard.js"></script>
-    <script src="./js/components/ProductModal.js"></script>
-    <script src="./js/components/DealProductModal.js"></script>
+    <script src="./js/components/ImageCard.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
