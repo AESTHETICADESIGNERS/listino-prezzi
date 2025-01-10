@@ -1,26 +1,10 @@
-/*
-body {
-    background-image: url("../sfondo.jpg");
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../sfondo-trasparente-con-fulmine.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-*/
+/*Import font from local folder*/
 
-.product {
-    transition-duration: 1s;
+@font-face {
+    font-family: 'Koulen';
+    src: url('../fonts/Koulen.ttf') format('truetype');
 }
 
-.product:hover {
-    transform: scale(1.05);
-    box-shadow: white 2px 3px;
-    border-color: white;
-}
-
-.logo {
-    transition-duration: 3s;
-}
-
-.logo:hover {
-    transform: scale(1.05);
+.font-koulen {
+    font-family: 'Koulen', sans-serif;
 }

@@ -1,62 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LISTINO PREZZI</title>
-    <link rel="icon" type="image/png" href="./logo.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamo HUB</title>
     <link rel="stylesheet" href="./css/tailwindcss.css">
     <link rel="stylesheet" href="./css/mystyle.css">
-  </head>
-  <body class="bg-gray-950">
-    <image-card text="Ciao come stai!!"></image-card>
-    <div class="container mx-auto px-2 flex flex-col items-center gap-4">
-        <img class="logo mt-5" src="logo.png" alt="" width="100px" height="100px">
-        <h1 class="text-2xl font-semibold text-white">ECRP DEV</h1>
-        <div class="grid grid-cols-6 gap-4 text-white">
-
-          <div class="flex flex-row col-span-6 md:col-span-4 rounded-lg bg-[#e6e6e6] border-gray-500 border-[5px] border-solid gap-6">
-            <img class="relative top-0 h-fit w-[15rem]" src="./images/image-grafiche.png" alt="" srcset="">
-            <div class="flex flex-col justify-center m-2">
-              <h2 class="text-3xl font-bold text-black">Grafiche</h2>
-              <p class="text-lg font-semibold text-black">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentium consectetur quas at asperiores, unde ipsam minima delectus ea facere illo architecto officiis facilis?
-              </p>
+    <link rel="icon" type="image/x-icon" href="./images/logo.webp">
+</head>
+<body class="font-koulen bg-[#414040]" style="background: rgb(48,43,41);
+background: linear-gradient(48deg, rgba(48,43,41,1) 0%, rgba(0,0,0,1) 100%);">
+    <div class="container">
+        <!--        NAVBAR      -->
+        <dynamo-navbar></dynamo-navbar>
+        <!--        NAVBAR      -->
+        <!--        HEADER      -->
+        <div id="home" class="text-white h-screen w-screen flex flex-col items-center justify-center">
+            <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-center">
+                <p>La creatività è contagiosa,</p><span class="text-[#ff6900]">trasmettila</span>!
             </div>
-          </div>
-
-          <div class="flex flex-row col-span-6 md:col-span-2 rounded-lg bg-[#7289d9] border-[#5163a3] border-[5px] border-solid gap-6">
-            <img class="relative top-0 h-fit w-[15rem]" src="./images/image-grafiche.png" alt="" srcset="">
-            <div class="flex flex-col justify-center m-2">
-              <h2 class="text-3xl font-bold text-white">Grafiche Discord</h2>
-              <p class="text-lg font-semibold text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentiu
-              </p>
+            <div class="text-center text-xl lg:text-2xl my-5">
+                <p>
+                    Con Dynamo Hub ottieni molto di più che semplici grafica o script.
+                </p>
+                <p>
+                    Diamo priorità alla vostra soddisfazione, garantendo assoluta trasparenza e prezzi bassi.
+                </p>
             </div>
-          </div>
-
-          <div class="flex flex-row col-span-6 md:col-span-3 rounded-lg bg-[#ff0000] border-[#bd2020] border-[5px] border-solid gap-6">
-            <img class="relative top-0 h-fit w-[15rem]" src="./images/youtube-logo.webp" alt="" srcset="">
-            <div class="flex flex-col justify-center m-2">
-              <h2 class="text-3xl font-bold text-white">Grafiche YouTube</h2>
-              <p class="text-lg font-semibold text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentiu
-              </p>
+            <div>
+                <button class="p-2 mr-4 text-xl lg:text-2xl rounded-xl bg-[#ff6900] font-bold">Offerte</button>
+                <button class="p-2 text-xl lg:text-2xl rounded-xl font-bold border-2 border-white">Supporto</button>
             </div>
-          </div>
-          
-          <div class="flex flex-row col-span-6 md:col-span-3 rounded-lg bg-[#7f3fe0] border-gray-500 border-[5px] border-solid gap-6">
-            <img class="relative top-0 h-fit w-[15rem]" src="./images/image-grafiche.png" alt="" srcset="">
-            <div class="flex flex-col justify-center m-2">
-              <h2 class="text-3xl font-bold text-white">Grafiche Twitch</h2>
-              <p class="text-lg font-semibold text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos natus praesentiu
-              </p>
+            <div class="flex flex-row w-screen h-[40%] p-4 items-center">
+                <div class="p-4 border-2 bg-[#2F2F2F] border-white rounded-md">
+                    <div class=""></div>
+                    <h2 class="font-bold">ANTI-<span class="text-blue-400">DDOS</span></h2>
+                    <div class="text-[#c7c7c7]">
+                        <p>Lorem ipsum dolor sit amet,</p>
+                        <p>consectetur adipisicing elit.</p>
+                        <p>Assumenda eligendi dolor</p>
+                        <p>quibusdam cupiditate voluptatum</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+        <!--        HEADER      -->
+        <!--        GRAFICHE      -->
+        <!--        GRAFICHE      -->
     </div>
-    <script src="./js/components/ImageCard.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+    <script src="./js/components/dynamo-navbar.js"></script>
+    <script src="./script.js"></script>
+</body>
 </html>

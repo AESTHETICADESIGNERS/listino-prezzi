@@ -1,5 +1,19 @@
 {
+  "name": "nuovo-sito-dynamo-hub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "tailwindcss": "npx tailwindcss -i ./docs/css/input.css -o ./docs/css/tailwindcss.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "tailwindcss": "^3.4.16"
+    "daisyui": "^4.12.23",
+    "tailwindcss": "^3.4.17"
   }
 }
