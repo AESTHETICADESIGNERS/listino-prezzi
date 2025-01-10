@@ -2,9 +2,9 @@ class DynamoNavbar extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-        <div class="z-10 bg-[#2F2F2F] h-[60px] w-full flex items-center justify-center sticky top-0">
-            <div class="menu-toggle h-[50px] w-[150px] md:ml-[60px]"><img src="./images/logo+scritta.png"></div>
-            <ul class="hidden md:flex mx-auto text-white font-bold uppercase gap-[35px]">
+        <div class="z-10 bg-[#2F2F2F] h-[60px] w-full flex items-center justify-center md:justify-start sticky top-0">
+            <div class="menu-toggle h-[50px] w-[150px] md:ml-[60px] md:mr-[60px]"><img src="./images/logo+scritta.png"></div>
+            <ul class="hidden md:flex text-white font-bold uppercase gap-[35px]">
                 <li class="desktop-link"><a href="#home">home</a></li>
                 <li class="desktop-link"><a href="#grafiche">grafiche</a></li>
                 <li class="desktop-link"><a href="#scripts">scripts</a></li>
@@ -24,8 +24,8 @@ class DynamoNavbar extends HTMLElement {
         this.desktopLinks = Array.from(this.getElementsByClassName("desktop-link"));
         this.mobileLinks = Array.from(this.getElementsByClassName("mobile-link"));
         // Aggiungo il link attivo di default
-        this.activateLink(this.desktopLinks, "home");
-        this.activateLink(this.mobileLinks, "home");
+        this.activateLink(this.desktopLinks, this.getAttribute("selected"));
+        this.activateLink(this.mobileLinks, this.getAttribute("selected"));
         // Aggiungo l'evento onclick per tutti i li
         this.addEventListenerToLinks(this.desktopLinks);
         this.addEventListenerToLinks(this.mobileLinks);
