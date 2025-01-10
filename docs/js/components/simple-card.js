@@ -1,7 +1,6 @@
 class SimpleCard extends HTMLElement {
     constructor() {
         super();
-        console.log(this.getAttribute("text"));
         this.innerHTML = `
             <div class="p-4 border-2 bg-[#2F2F2F] border-white rounded-md">
                 <div class=""></div>
