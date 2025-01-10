@@ -8,46 +8,40 @@
     <link rel="stylesheet" href="./css/mystyle.css">
     <link rel="icon" type="image/x-icon" href="./images/logo.webp">
 </head>
-<body class="font-koulen bg-[#414040]" style="background: rgb(48,43,41);
-background: linear-gradient(48deg, rgba(48,43,41,1) 0%, rgba(0,0,0,1) 100%);">
-    <div class="container">
-        <!--        NAVBAR      -->
-        <dynamo-navbar></dynamo-navbar>
-        <!--        NAVBAR      -->
+<body class="font-koulen bg-[#3f3f40]">
+    <!--        NAVBAR      -->
+    <dynamo-navbar></dynamo-navbar>
+    <!--        NAVBAR      -->
+    <div class="container mx-auto">
         <!--        HEADER      -->
-        <div id="home" class="text-white h-screen w-screen flex flex-col items-center justify-center">
+        <div class="text-white flex flex-col items-center justify-center p-6">
             <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-center">
                 <p>La creatività è contagiosa,</p><span class="text-[#ff6900]">trasmettila</span>!
             </div>
-            <div class="text-center text-xl lg:text-2xl my-5">
-                <p>
-                    Con Dynamo Hub ottieni molto di più che semplici grafica o script.
-                </p>
-                <p>
-                    Diamo priorità alla vostra soddisfazione, garantendo assoluta trasparenza e prezzi bassi.
-                </p>
-            </div>
-            <div>
+                <div class="text-center text-xl lg:text-2xl my-5">
+                    <p>
+                        Con Dynamo Hub ottieni molto di più che semplici grafica o script.
+                    </p>
+                    <p>
+                        Diamo priorità alla vostra soddisfazione, garantendo assoluta trasparenza e prezzi bassi.
+                    </p>
+                </div>
+            <div class="mb-4">
                 <button class="p-2 mr-4 text-xl lg:text-2xl rounded-xl bg-[#ff6900] font-bold">Offerte</button>
                 <button class="p-2 text-xl lg:text-2xl rounded-xl font-bold border-2 border-white">Supporto</button>
             </div>
-            <div class="flex flex-row w-screen h-[40%] p-4 items-center">
-                <div class="p-4 border-2 bg-[#2F2F2F] border-white rounded-md">
-                    <div class=""></div>
-                    <h2 class="font-bold">ANTI-<span class="text-blue-400">DDOS</span></h2>
-                    <div class="text-[#c7c7c7]">
-                        <p>Lorem ipsum dolor sit amet,</p>
-                        <p>consectetur adipisicing elit.</p>
-                        <p>Assumenda eligendi dolor</p>
-                        <p>quibusdam cupiditate voluptatum</p>
-                    </div>
-                </div>
+            <div class="flex flex-col lg:flex-row p-4 items-center justify-center gap-4">
+                <simple-card text="ANTI-{coloredtext}" coloredtext="DDOS" color="#ffff00"></simple-card>
+                <simple-card text="ANTI-{coloredtext}" coloredtext="DDOS" color="#ff0000"></simple-card>
+                <simple-card text="ANTI-{coloredtext}" coloredtext="DDOS" color="#ffff00"></simple-card>
+                <simple-card text="ANTI-{coloredtext}" coloredtext="DDOS" color="#ffff00"></simple-card>
             </div>
         </div>
         <!--        HEADER      -->
         <!--        GRAFICHE      -->
         <!--        GRAFICHE      -->
     </div>
+    <script src="./js/components/simple-card.js"></script>
     <script src="./js/components/dynamo-navbar.js"></script>
     <script src="./script.js"></script>
 </body>
