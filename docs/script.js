@@ -3,7 +3,7 @@ const navbar = document.getElementsByTagName('dynamo-navbar')[0];
 console.log(navbar);
 
 const products = [
-    { "id": "IEHKOOBLXC", "name": "Logo piccolo", "description": "", "price": "Da 2 a 10", "discountPrice": "3", "category": "logo" },
+    { "id": "IEHKOOBLXC", "name": "Logo piccolo", "description": "", "price": "Da 2 a 10", "discountPrice": "3", "category": "logo", "fields": [{ "emoji": "⬇️", "name": "Costo basso"}, { "emoji": "📁", "name": "File PSD"}] },
     { "id": "YKSOWLXJKA", "name": "Banner piccolo", "description": "", "price": "0", "discountPrice": "", "category": "banner" },
     { "id": "ODNODKADMD", "name": "Server", "description": "", "price": "0", "discountPrice": "", "category": "discord" },
     { "id": "PVBEIGBFUW", "name": "Background", "description": "", "price": "0", "discountPrice": "", "category": "twitch" },
