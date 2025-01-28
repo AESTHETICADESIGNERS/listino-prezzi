@@ -5,22 +5,24 @@ class DynamoNavbar extends HTMLElement {
         <div class="z-10 bg-[#2F2F2F] h-[60px] w-full flex items-center justify-center md:justify-start sticky top-0">
             <div class="menu-toggle h-[50px] w-[150px] md:ml-[60px] md:mr-[60px]"><img src="./images/logo+scritta.png"></div>
             <ul class="hidden md:flex text-white font-bold uppercase gap-[35px]">
-                <li class="desktop-link"><a href="#home">home</a></li>
-                <li class="desktop-link"><a href="#grafiche">grafiche</a></li>
-                <li class="desktop-link"><a href="#scripts">scripts</a></li>
-                <li class="desktop-link"><a href="#offerte">offerte</a></li>
+                <li class="desktop-link hover:text-[#ec8840]"><a href="./index.html">home</a></li>
+                <li class="desktop-link hover:text-[#ec8840]"><a href="./grafiche.html">grafiche</a></li>
+                <li class="desktop-link hover:text-[#ec8840]"><a href="#scripts">scripts</a></li>
+                <li class="desktop-link hover:text-[#ec8840]"><a href="#offerte">offerte</a></li>
             </ul>
         </div>
         <div class="menu-mobile -translate-x-full md:hidden fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-[#3f3f40]">
-            <ul class="text-center text-6xl flex flex-col gap-8 text-white">
-                <li class="mobile-link hover:text-[#ff6900]">HOME</li>
-                <li class="mobile-link hover:text-[#ff6900]">GRAFICHE</li>
-                <li class="mobile-link hover:text-[#ff6900]">SCRIPTS</li>
-                <li class="mobile-link hover:text-[#ff6900]">OFFERTE</li>
+            <ul class="text-center text-6xl flex flex-col gap-8 text-white uppercase">
+                <li class="mobile-link hover:text-[#ec8840]"><a href="./index.html">home</a></li>
+                <li class="mobile-link hover:text-[#ec8840]"><a href="./grafiche.html">grafiche</a></li>
+                <li class="mobile-link hover:text-[#ec8840]">SCRIPTS</li>
+                <li class="mobile-link hover:text-[#ec8840]">OFFERTE</li>
             </ul>
         </div>
         `;
-        this.activatedLinkColor = "text-[#ff6900]";
+        this.linkActivatedColor = "text-[#ff6900]";
+        this.linkHoverColor = "hover:text-[#ec8840]";
+
         this.desktopLinks = Array.from(this.getElementsByClassName("desktop-link"));
         this.mobileLinks = Array.from(this.getElementsByClassName("mobile-link"));
         // Aggiungo il link attivo di default
@@ -56,11 +58,15 @@ class DynamoNavbar extends HTMLElement {
     }
     activateLink(links, name) {
         const linkToActivate = links.find(link => link.innerText.toLowerCase() === name.toLowerCase());
-        linkToActivate.classList.add(this.activatedLinkColor);
+        // Tolgo la classe hover
+        linkToActivate.classList.remove(this.linkHoverColor);
+        // Aggiungo la classe per il colore attivo
+        linkToActivate.classList.add(this.linkActivatedColor);
     }
     resetLinksColor(links) {
         links.forEach((link) => {
-            link.classList.remove(this.activatedLinkColor);
+            link.classList.remove(this.linkActivatedColor);
+            link.classList.add(this.linkHoverColor);
         });
     }
 }
