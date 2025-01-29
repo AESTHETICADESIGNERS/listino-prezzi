@@ -14,3 +14,42 @@ const products = [
     { "id": "YLUXNGYNOP", "name": "Banner", "description": "", "price": "0", "discountPrice": "", "category": "youtube" },
     { "id": "FJGHFUGHUFIG", "name": "TEST2", "description": "", "price": "0", "discountPrice": "", "category": "youtube" }
 ];
+
+const productsTest = [
+    { 
+        "id": "IEHKOOBLXC",
+        "name": "Logo piccolo",
+        "description": "Logo perfetto per chi non vuole esagerare", 
+        "price": "2", 
+        "discountPrice": "1", 
+        "category": "logo", 
+        "fields": [
+            {
+                "emoji": "⬇️",
+                "name": "Costo basso"
+            }, 
+            {
+                "emoji": "📁",
+                "name": "File PSD"
+            }
+        ]
+    },
+    { 
+        "id": "IDJFIJDIFHUD",
+        "name": "Logo grande",
+        "description": "Logo perfetto per chi non vuole esagerare", 
+        "price": "5", 
+        "discountPrice": "3", 
+        "category": "discord", 
+        "fields": [
+            {
+                "emoji": "⬇️",
+                "name": "Costo basso"
+            }, 
+            {
+                "emoji": "📁",
+                "name": "File PSD"
+            }
+        ]
+    }
+];
