@@ -9,7 +9,7 @@ class ProductCard extends HTMLElement {
                         ${selectedProduct.name}
                     </h2>
                     <p class="text-white text-center text-2xl">
-                        ${selectedProduct.discountPrice ? `<span class="text-[#ff6900] line-through">${selectedProduct.price}€</span> ${selectedProduct.discountPrice}€` : `${selectedProduct.price}€`}
+                        ${selectedProduct.discountPrice ? `<span class="text-[#49b763] line-through">${selectedProduct.price}€</span> ${selectedProduct.discountPrice}€` : `${selectedProduct.price}€`}
                     </p>
                     <hr class="border-white text-3xl my-1 w-[50%] mx-auto">
                     <div class="text-white font-semibold">
