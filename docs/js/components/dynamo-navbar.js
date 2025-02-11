@@ -3,7 +3,7 @@ class DynamoNavbar extends HTMLElement {
         super();
         this.innerHTML = `
         <div class="z-10 bg-[#2F2F2F] h-[60px] w-full flex items-center justify-center md:justify-start sticky top-0">
-            <div class="menu-toggle h-[50px] w-[150px] md:ml-[60px] md:mr-[60px]"><img src="./images/logo+scritta.svg"></div>
+            <div class="menu-toggle h-[50px] w-[150px] md:ml-[60px] md:mr-[60px]"><img src="./images/logo+scritta.png"></div>
             <ul class="hidden md:flex text-white font-bold uppercase gap-[35px]">
                 <li><a class="desktop-link" href="./index.html">home</a></li>
                 <li><a class="desktop-link" href="./grafiche.html">grafiche</a></li>
@@ -12,7 +12,7 @@ class DynamoNavbar extends HTMLElement {
             </ul>
         </div>
         <div class="menu-mobile -translate-x-full transition-all duration-[1.5s] md:hidden fixed top-0 left-0 w-full h-screen flex justify-center items-center bg-[#3f3f40]">
-            <ul class="text-center text-6xl flex flex-col gap-8 text-white uppercase">
+            <ul class="text-center text-6xl font-semibold flex flex-col gap-8 text-white uppercase">
                 <li><a class="mobile-link" href="./index.html">home</a></li>
                 <li><a class="mobile-link" href="./grafiche.html">grafiche</a></li>
                 <li><a class="mobile-link" href="./scripts.html">scripts</a></li>
@@ -20,8 +20,8 @@ class DynamoNavbar extends HTMLElement {
             </ul>
         </div>
         `;
-        this.linkActivatedColor = "text-[#49b763]";
-        this.linkHoverColor = "hover:text-[#6dc582]";
+        this.linkActivatedColor = "text-[#d15988]";
+        this.linkHoverColor = "hover:text-[#de87a8]";
 
         // Aggiungo a tutti i link a la classe per l'hover
         Array.from(this.getElementsByTagName("a")).forEach(link => link.classList.add(this.linkHoverColor));

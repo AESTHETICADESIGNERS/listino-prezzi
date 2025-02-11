@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamo HUB</title>
+    <title>Aesthetica Designers</title>
     <link rel="stylesheet" href="./css/tailwindcss.css">
     <link rel="stylesheet" href="./css/mystyle.css">
     <link rel="icon" type="image/x-icon" href="./images/logo.svg">
 </head>
-<body class="font-koulen bg-[#3f3f40] overflow-x-hidden">
+<body class="font-koulen bg-[#39393a] overflow-x-hidden">
     <!--        NAVBAR      -->
     <dynamo-navbar selected="home"></dynamo-navbar>
     <!--        NAVBAR      -->
     <div class="container mx-auto">
         <!--        HEADER      -->
         <div class="text-white flex flex-col items-center justify-center p-6">
-            <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-                <p>La creatività è contagiosa,</p><span class="text-[#49b763]">trasmettila</span>!
+            <div class="text-4xl md:text-5xl lg:text-6xl text-center">
+                <p class="font-franklin">La creatività è contagiosa,</p><span class="font-franklin text-[#d15988]">trasmettila</span>!
             </div>
             <div class="text-center text-xl lg:text-2xl my-5">
                 <p>
-                    Con Dynamo Hub ottieni molto di più che semplici grafica o script.
+                    Con Aesthetica Designers ottieni molto di più che semplici grafica o script.
                 </p>
                 <p>
                     Diamo priorità alla vostra soddisfazione, garantendo assoluta trasparenza e prezzi bassi.
                 </p>
             </div>
             <div class="mb-4">
-                <button class="p-2 mr-4 text-xl lg:text-2xl rounded-xl bg-[#49b763] font-bold">Offerte</button>
+                <button class="p-2 mr-4 text-xl lg:text-2xl rounded-xl bg-[#d15988] font-bold">Offerte</button>
                 <button class="p-2 text-xl lg:text-2xl rounded-xl font-bold border-2 border-white">Supporto</button>
             </div>
             <div class="flex flex-col lg:flex-row p-4 items-center justify-center gap-4">
@@ -39,10 +39,14 @@
         </div>
         <!--        HEADER      -->
         <!--        GRAFICHE      -->
-        <products-cards category="" class="grid grid-cols-1 mx-2 md:grid-cols-2 lg:grid-cols-4 gap-4"></products-cards>
+        <!-- <products-cards category="" class="grid grid-cols-1 mx-2 md:grid-cols-2 lg:grid-cols-4 gap-4"></products-cards> -->
+        <recommended-products-cards category="logo" class="grid grid-cols-1 mx-2 md:grid-cols-2 lg:grid-cols-4 gap-4"></recommended-products-cards>
         <!--        GRAFICHE      -->
+        <canvas class="fixed top-0 left-0 -z-20" id="cuore"></canvas>
     </div>
     <script src="./script.js"></script>
+    <script src="./js/animazione-cuore.js"></script>
+    <script src="./js/components/recommended-products-cards.js"></script>
     <script src="./js/components/products-cards.js"></script>
     <script src="./js/components/simple-card.js"></script>
     <script src="./js/components/dynamo-navbar.js"></script>

@@ -5,6 +5,16 @@
     src: url('../fonts/Koulen.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Franklin';
+    src: url('../fonts/Franklin\ Gothic\ Heavy\ Regular.ttf') format('truetype');
+}
+
+
 .font-koulen {
     font-family: 'Koulen', sans-serif;
+}
+
+.font-franklin {
+    font-family: 'Franklin', sans-serif;
 }
